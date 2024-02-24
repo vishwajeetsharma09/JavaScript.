@@ -1,0 +1,12 @@
+button{
+    border: 2px solid blue;
+    border-color: blue;
+    background-color: red;
+    font-size: medium;
+    color: rgb(212, 255, 212);
+}
+
+.heading{
+    background-color: red;
+    text-align: center;
+}
