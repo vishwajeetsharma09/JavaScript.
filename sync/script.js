@@ -13,17 +13,31 @@
 //   });
 // });
 
-const getPromise = () => {
-  return new Promise((resolve, reject) => {
-    console.log("i am a promise ");
-    resolve("Sucess");
-  });
-};
-let promise = getPromise();
-promise.then(() => {
-  console.log("Promise Fulfill");
-});
+// const getPromise = () => {
+//   return new Promise((resolve, reject) => {
+//     console.log("i am a promise ");
+//     resolve("Sucess");
+//   });
+// };
+// let promise = getPromise();
+// promise.then(() => {
+//   console.log("Promise Fulfill");
+// });
 
 //data1
 //data2
 //data3
+
+function asynFunc() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("some data");
+      resolve("success");
+    }, 5000);
+  });
+} 
+console.log("Fetching get one");
+let p1 = asynFunc();
+p1.then((res) => {
+  console.log(res);
+});
