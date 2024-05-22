@@ -28,16 +28,18 @@
 //data2
 //data3
 
-function asynFunc() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("some data");
-      resolve("success");
-    }, 5000);
-  });
-} 
-console.log("Fetching get one");
-let p1 = asynFunc();
-p1.then((res) => {
-  console.log(res);
-});
+// function asynFunc() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("some data");
+//       resolve("success");
+//     }, 5000);
+//   });
+// }
+// console.log("Fetching get one");
+// let p1 = asynFunc();
+// p1.then((res) => {
+//   console.log(res);
+// });
+
+// async function is always return functions
